@@ -3,7 +3,6 @@ package sg.edu.nus.iss.app.workshop12.controller;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
@@ -47,7 +46,7 @@ public class GenerateRandController {
         if(noOfGenerateNo < 1 || noOfGenerateNo > maxGenNo){
             throw new RandNoException();
         }
-        for(int x = 0; x< maxGenNo-1; x++){
+        for(int x = 0; x< maxGenNo+1; x++){
             imgNumbers[x] = "number" + x + ".jpg";
         }
 
